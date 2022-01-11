@@ -1,0 +1,10 @@
+.upList{
+    display: flex;
+}
+.item{
+    width: 50%;
+}
+
+.comments{
+    text-align: center;
+}
