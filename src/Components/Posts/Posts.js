@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
 
-import {postService} from "../../services/post.service";
 import Post from "../Posts/Post";
 
 const Posts = ({posts}) => {
@@ -18,7 +17,7 @@ const Posts = ({posts}) => {
         <div>
             {post.map(item => <Post key={item.id}
                                     id={item.id}
-                                    userId={item.userId}
+                                    postId={item.userId}
                                     title={item.title}
                                     body={item.body}
             />)}

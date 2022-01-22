@@ -10,15 +10,14 @@ import {postService} from "./services/post.service";
 function App() {
     const [user, setUser] = useState(null);
 
-    const [userId, setUserId] = useState([]);
+    const [posts, setPosts] = useState([]);
 
     const click = (singleUser) => {
         setUser(singleUser)
     }
 
     const getUserId = (userId) => {
-        postService.getAllPost(userId).then(post => setUserId(post))
-        setUserId([])
+        postService.getAllPost(userId).then(post => setPosts(post))
     }
 
 
@@ -27,9 +26,9 @@ function App() {
     <div>
         <div>
             <Users click={click}/>
-            <UserDetails user={user} getUserId={getUserId}/>
+            {user && <UserDetails user={user} getUserId={getUserId}/>}
         </div>
-        {userId && <Posts posts={userId}/>}
+        {posts && <Posts posts={posts}/>}
     </div>
   );
 }
