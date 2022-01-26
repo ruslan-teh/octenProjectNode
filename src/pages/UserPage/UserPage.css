@@ -1,0 +1,9 @@
+.head{
+    display: flex;
+    gap: 20px;
+    border: 2px solid greenyellow;
+}
+
+.userPage{
+    width: 50%;
+}
