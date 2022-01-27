@@ -1,7 +1,7 @@
-import {Outlet} from "react-router-dom";
+import {Outlet} from 'react-router-dom';
 
-import {} from '../UserPage/UserPage.css'
-import Users from "../../components/Users/Users";
+import '../UserPage/UserPage.css'
+import Users from '../../components/Users/Users';
 
 
 const UserPage = () => {
@@ -18,4 +18,4 @@ const UserPage = () => {
 
 };
 
-export default UserPage;
+export {UserPage};

@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-import {Outlet} from "react-router-dom";
-import Posts from "../../components/Posts/Posts";
-import {} from '../PostPage/PostPage.css'
+import {Outlet} from 'react-router-dom';
+import Posts from '../../components/Posts/Posts';
+import '../PostPage/PostPage.css'
 
 const PostPage = () => {
     return (
@@ -14,4 +14,4 @@ const PostPage = () => {
     );
 };
 
-export default PostPage;
+export {PostPage};

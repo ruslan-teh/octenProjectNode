@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import {Outlet, useLocation, useParams} from "react-router-dom";
+import {useLocation} from 'react-router-dom';
 
 
-import {} from '../PhotosPage/PhotosPage.css'
-import {photoService} from "../../services/photo.service";
+import '../PhotosPage/PhotosPage.css'
+import {photoService} from '../../services/photo.service';
 
 const PhotosPage = () => {
 
@@ -23,7 +23,6 @@ const PhotosPage = () => {
         <div>
             {state.id && photoArr.map(value =>
             <div key={value.id}>
-                {console.log(value)}
                 <p>id: {value.id}</p>
                 <img className={'imgStyle'} src={value.url} alt=""/>
             </div>
@@ -33,4 +32,4 @@ const PhotosPage = () => {
     );
 };
 
-export default PhotosPage;
+export {PhotosPage};

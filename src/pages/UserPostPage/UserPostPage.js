@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import {postService} from "../../services/post.service";
-import {useParams} from "react-router-dom";
-import UserPost from "../../components/UserPost/UserPost";
+import {postService} from '../../services/post.service';
+import {useParams} from 'react-router-dom';
+import UserPost from '../../components/UserPost/UserPost';
 
 
 const UserPostPage = () => {
@@ -25,4 +25,4 @@ const UserPostPage = () => {
 
 };
 
-export default UserPostPage;
+export {UserPostPage};

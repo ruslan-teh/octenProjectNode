@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react';
-import {Link, Outlet, useLocation, useParams} from "react-router-dom";
+import {Link, Outlet, useLocation, useParams} from 'react-router-dom';
 
 
 import {postService} from "../../services/post.service";
-import CommentsPage from "../PostCommentsPage/CommentsPage";
+import {PostCommentsPage} from "../PostCommentsPage/PostCommentsPage";
+
 
 const PostDetailsPages = () => {
 
@@ -23,10 +24,10 @@ const PostDetailsPages = () => {
     return (
         <div>
             {postDetails &&
-            (<div><Link to={'comments'} element={<CommentsPage/>} state={postDetails}>Id: {postDetails.id}==={postDetails.title}</Link></div>)}
+            (<div><Link to={'comments'} element={<PostCommentsPage/>} state={postDetails}>Id: {postDetails.id}==={postDetails.title}</Link></div>)}
             <Outlet/>
         </div>
     );
 };
 
-export default PostDetailsPages;
+export {PostDetailsPages};

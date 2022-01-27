@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import {Link, Outlet, useParams} from "react-router-dom";
+import {Link, Outlet, useParams} from 'react-router-dom';
 import {} from '../AlbumsPage/AlbumsPage.css'
 
-import {albumsServise} from "../../services/albums.servise";
+import {albumsServise} from '../../services/albums.servise';
 
 const AlbumsPage = () => {
 
@@ -31,4 +31,4 @@ const AlbumsPage = () => {
     );
 };
 
-export default AlbumsPage;
+export {AlbumsPage};

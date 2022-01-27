@@ -1,8 +1,9 @@
-import {Link, Outlet, useLocation, useParams} from "react-router-dom";
-import {useEffect, useState} from "react";
+import {Link, Outlet, useLocation, useParams} from 'react-router-dom';
+import {useEffect, useState} from 'react';
 
-import {usersService} from "../../services/users.service";
-import UserPostPage from "../UserPostPage/UserPostPage";
+import {usersService} from '../../services/users.service';
+import {UserPostPage} from '../UserPostPage/UserPostPage';
+
 
 
 const UserDetailsPage = () => {
@@ -29,4 +30,4 @@ const UserDetailsPage = () => {
     );
 };
 
-export default UserDetailsPage;
+export {UserDetailsPage};

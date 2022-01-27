@@ -1,16 +1,19 @@
 import React from 'react';
-import {Routes, Route, Navigate} from "react-router-dom";
+import {Routes, Route, Navigate} from 'react-router-dom';
 
 
-import Header from "./components/Header/Header";
-import UserPage from "./pages/UserPage/UserPage";
-import PostPage from "./pages/PostPage/PostPage";
-import UserDetailsPage from './pages/UserDetailsPages/UserDetailsPage'
-import PostDetailsPages from "./pages/PostDetailsPages/PostDetailsPages";
-import UserPostPage from "./pages/UserPostPage/UserPostPage";
-import CommentsPage from "./pages/PostCommentsPage/CommentsPage";
-import AlbumsPage from "./pages/AlbumsPage/AlbumsPage";
-import PhotosPage from "./pages/PhotosPage/PhotosPage";
+import Header from './components/Header/Header';
+import {
+    AlbumsPage,
+    PhotosPage,
+    PostCommentsPage,
+    PostDetailsPages,
+    PostPage,
+    UserDetailsPage,
+    UserPage,
+    UserPostPage
+} from "./pages";
+
 
 const App = () => {
 
@@ -37,7 +40,7 @@ const App = () => {
                     <Route path={'posts'} element={<PostPage/>}>
                         <Route path={':id'} element={<PostDetailsPages/>}>
 
-                            <Route path={':comments'} element={<CommentsPage/>}/>
+                            <Route path={':comments'} element={<PostCommentsPage/>}/>
 
                         </Route>
                     </Route>
