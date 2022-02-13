@@ -1,0 +1,22 @@
+.cardWrap{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.item{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.cardList{
+    flex: 1 1 auto;
+
+}
+
+.navigateButton{
+    flex: 0 0 auto;
+
+}

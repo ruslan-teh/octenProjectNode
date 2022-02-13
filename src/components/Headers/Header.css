@@ -1,0 +1,31 @@
+.head{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: darkblue;
+    color: white;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover{
+    color: brown;
+    transition: .2s;
+}
+
+.select{
+    background-color: inherit;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.select option{
+    background-color: inherit;
+    border: none;
+    color: red;
+}
+

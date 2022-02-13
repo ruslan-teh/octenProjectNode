@@ -1,0 +1,10 @@
+.buttonSwitch{
+    background-color: inherit;
+    border: none;
+    color: orange;
+}
+
+.buttonSwitch:hover{
+    transition: .2s;
+    color: azure;
+}

@@ -1,0 +1,11 @@
+.cardMovie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cardMovie img {
+    border-radius: 20px;
+}
